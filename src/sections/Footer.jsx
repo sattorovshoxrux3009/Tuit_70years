@@ -116,11 +116,11 @@ function Footer() {
               <p>
                 {t("footer6")}
                 <br />
-                📞 90-512-14-07 <br />
-                📞 91-443-38-33
+                📞 +998-71-203-44-44
+                <br />
               </p>
               <span className="mobile-links">
-                <a href="https://www.instagram.com/wonder_kids_school_gijduvan?igsh=MXJha2k3aDZoNm9zdQ==">
+                <a href="https://www.instagram.com/tuit.official/?r=nametag">
                   <svg
                     width="20"
                     height="20"
@@ -139,7 +139,7 @@ function Footer() {
                     ></path>
                   </svg>
                 </a>
-                <a href="https://t.me/wonderkidsuz">
+                <a href="https://t.me/tuituz_official">
                   <svg
                     width="20"
                     height="17"

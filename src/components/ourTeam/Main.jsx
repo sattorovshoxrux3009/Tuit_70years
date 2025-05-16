@@ -1,6 +1,6 @@
 import "./Main.scss";
 import { easeOut, motion } from "framer-motion";
-import ourTeamBG from "../../img/content.jpg";
+import ourTeamBG from "../../img/content.png";
 import { useTranslation } from "react-i18next";
 
 function Main() {

@@ -2,17 +2,12 @@ import "./Main.scss";
 import { useRef, useState } from "react";
 import { motion, easeOut } from "framer-motion";
 
-import video1 from "../../video/lessonTime1.mp4";
-import video2 from "../../video/lessonTime2.mp4";
-import video3 from "../../video/lessonTime3.mp4";
+import video1 from "../../video/content.mp4";
 import poster1 from "../../img/poster1.png";
-import poster2 from "../../img/poster2.png";
 // import poster3 from "../../img/poster3.png";
 
 const videos = [
   { id: 1, src: video1, poster: poster1 },
-  // { id: 2, src: video2, poster: poster2 },
-  // { id: 3, src: video3, poster: poster2 },
 ];
 
 function Content() {

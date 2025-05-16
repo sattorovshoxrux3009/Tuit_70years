@@ -22,11 +22,11 @@ function Support() {
           <ul>
             <li>
               <div>
-                <h1>200+</h1>
+                <h1>34941</h1>
                 <p>{t("pupils")}</p>
               </div>
               <div>
-                <h1>2</h1>
+                <h1>1800</h1>
                 <p>{t("food")}</p>
               </div>
             </li>

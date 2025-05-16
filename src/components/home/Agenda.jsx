@@ -1,13 +1,12 @@
 import "./Agenda.scss";
 import png1 from "../../img/3d1.webp";
 import png2 from "../../img/3d2.webp";
-import png3 from "../../img/3d3.webp";
-import png4 from "../../img/3d4.webp";
+import png4 from "../../img/3d3.webp";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 function Agenda() {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   return (
     <section id="agenda" className="agenda">
@@ -23,11 +22,11 @@ function Agenda() {
           <li>
             <div>
               <motion.h2
-                initial={{ x: -500, opacity: 0 }}
+                initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0 }}
               >
-                08:00-13:05
+                08:30-12:50
               </motion.h2>
             </div>
             <motion.p
@@ -46,7 +45,7 @@ function Agenda() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0 }}
               >
-                13:05-14:05
+                12:50-13:30
               </motion.h2>
             </div>
             <motion.p
@@ -65,7 +64,7 @@ function Agenda() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0 }}
               >
-                15:00-16:00
+                13:30-17:50
               </motion.h2>
             </div>
             <motion.p
@@ -77,7 +76,7 @@ function Agenda() {
             </motion.p>
             <img src={png4} alt="" />
           </li>
-          <li>
+          {/* <li>
             <div>
               <motion.h2
                 initial={{ x: -50, opacity: 0 }}
@@ -95,7 +94,7 @@ function Agenda() {
               {t("agenda10")} <span>{t("agenda11")}</span> {t("agenda12")}
             </motion.p>
             <img src={png3} alt="" />
-          </li>
+          </li> */}
         </ul>
       </div>
     </section>

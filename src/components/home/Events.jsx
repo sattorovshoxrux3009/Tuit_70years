@@ -26,10 +26,10 @@ function Events() {
       question: t("event8"),
       answer: t("event9"),
     },
-    {
-      question: t("event10"),
-      answer: t("event11"),
-    },
+    // {
+    //   question: t("event10"),
+    //   answer: t("event11"),
+    // },
   ];
   const handleClick = (index) => {
     if (openIndex === index) {

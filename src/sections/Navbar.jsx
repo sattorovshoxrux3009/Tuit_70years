@@ -115,11 +115,11 @@ function Navbar() {
                   location.pathname === "/lesson_time" ? "active-link" : ""
                 }
               >
-                Dars jarayoni
+                {t("videos")}
               </a>
             </div>
             <div className="right">
-              <a href="tel:+998914433833">+998-91-443-38-33</a>
+              <a href="tel:+998712034444">+998-71-203-44-44</a>
               <button
                 onClick={() => {
                   setIsOpenButtons(!isOpenButtons);
@@ -254,11 +254,11 @@ function Navbar() {
                 setActive(false);
               }}
             >
-              Dars jarayoni
+              {t("videos")}
             </a>
           </div>
           <div className="bottom">
-            <a href="tel:+998914433833">+998-91-443-38-33</a>
+            <a href="tel:+998712034444">+998-71-203-44-44</a>
             <button
               onClick={() => {
                 setIsOpenButtons(!isOpenButtons);

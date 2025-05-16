@@ -3,7 +3,7 @@ import content from "../../video/content.mp4";
 import { useEffect, useRef, useState } from "react";
 import { motion, easeOut } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import contentImg from "../../img/content.jpg";
+import contentImg from "../../img/content.png";
 
 function Content() {
   const { t } = useTranslation();
@@ -35,7 +35,7 @@ function Content() {
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5, ease: easeOut }}
             >
-              <span>WONDER</span> KIDS
+              <span>TA</span>TU
             </motion.h1>
             <motion.p
               whileInView={{ opacity: [0, 0.8] }}

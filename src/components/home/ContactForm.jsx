@@ -8,20 +8,20 @@ function ContactForm() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [name, setName] = useState("");
   const [error, setError] = useState(null);
-  const [activeType, setActiveType] = useState("1-4");
+  const [activeType, setActiveType] = useState("1-3");
   const [succesM, setSuccesM] = useState(false);
   const language = localStorage.getItem("i18nextLng");
 
   let bot = {
-    TOKEN: "7746874876:AAGl1CtRvPkFqWoAwaS4qDdeeaWYSqgylBg",
-    chatID: "1059069336",
-    message: `📩 Yangi xabar Wonder Kids saytida!
+    TOKEN: "",
+    chatID: "",
+    message: `📩 Yangi xabar TATU saytida!
         %0A📚 Sinf yo'nalishi: ${
-          activeType == "1-4"
-            ? "1-4 sinflar"
-            : activeType == "5-8"
-            ? "5-8 sinflar"
-            : "9-11 sinflar"
+          activeType == "1-3"
+            ? "1-3 kurslar"
+            : activeType == "4"
+            ? "Bitiruvchi kurs"
+            : "Magistratura"
         } 
         %0A👤 Yuboruvchi: ${name}
         %0A📞 Telefon:${encodeURIComponent(phoneNumber)}
@@ -122,7 +122,7 @@ function ContactForm() {
             whileInView={{ y: [50, 1] }}
             transition={{ duration: 0.7, ease: easeOut }}
           >
-            +998-91-443-38-33
+            +998-71-203-44-44
           </motion.h2>
         </div>
         <div className="right">
@@ -179,9 +179,9 @@ function ContactForm() {
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.3, delay: 0, ease: easeOut }}
                 onClick={() => {
-                  setActiveType("1-4");
+                  setActiveType("1-3");
                 }}
-                className={activeType == "1-4" ? "active" : ""}
+                className={activeType == "1-3" ? "active" : ""}
               >
                 {t("contactForm8")}
               </motion.li>
@@ -189,9 +189,9 @@ function ContactForm() {
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5, delay: 0.3, ease: easeOut }}
                 onClick={() => {
-                  setActiveType("5-8");
+                  setActiveType("4");
                 }}
-                className={activeType == "5-8" ? "active" : ""}
+                className={activeType == "4" ? "active" : ""}
               >
                 {t("contactForm9")}
               </motion.li>
@@ -199,9 +199,9 @@ function ContactForm() {
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5, delay: 0.6, ease: easeOut }}
                 onClick={() => {
-                  setActiveType("9-11");
+                  setActiveType("M");
                 }}
-                className={activeType == "9-11" ? "active" : ""}
+                className={activeType == "M" ? "active" : ""}
               >
                 {t("contactForm10")}
               </motion.li>

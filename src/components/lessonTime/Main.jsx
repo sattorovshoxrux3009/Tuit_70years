@@ -4,7 +4,7 @@ function Main() {
   return (
     <div className="main">
       <div className="container">
-        <h1>Dars jarayoni</h1>
+        <h1>Video lavhalar</h1>
       </div>
     </div>
   );
