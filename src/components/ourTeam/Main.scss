@@ -1,0 +1,47 @@
+.ourTeam {
+  .main {
+    margin-top: 30px;
+    .container {
+      span {
+        display: flex;
+        align-items: center;
+        h1 {
+          text-transform: uppercase;
+          color: #00264b;
+          font-size: 50px;
+          width: 50%;
+          @media screen and (max-width: 1280px) {
+            width: auto;
+            text-align: center;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 22px;
+          }
+        }
+        p {
+          color: #00264b;
+          font-size: 22px;
+          @media screen and (max-width: 1280px) {
+            text-align: center;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+        @media screen and (max-width: 1280px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+      img {
+        margin-top: 50px;
+        width: 100%;
+        border-radius: 30px;
+        @media screen and (max-width: 768px) {
+          margin-top: 20px;
+          border-radius: 18px;
+        }
+      }
+    }
+  }
+}

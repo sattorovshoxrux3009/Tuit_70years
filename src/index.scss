@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #f7f6fb;
+}
+#aboutUs,
+#schoolLife,
+#admission,
+#events,
+#contact,
+#agenda,
+#contact {
+  scroll-margin-top: 100px;
+}
+
+.container {
+  max-width: 1540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  @media screen and (max-width: 1024px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,61 @@
+.lessonTime {
+  .content {
+    .container {
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+          button {
+            @media screen and (max-width: 768px) {
+              width: 40px !important;
+              height: 40px !important;
+              padding-left: 5px !important;
+            }
+            svg {
+              @media screen and (max-width: 768px) {
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+          video,
+          img {
+            border-radius: 30px;
+            @media screen and (max-width: 768px) {
+              border-radius: 15px;
+            }
+          }
+          &:nth-child(1) {
+            height: auto;
+            width: 90%;
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
+            video,
+            img {
+              height: auto;
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            width: 40%;
+            video,
+            img {
+              width: 100%;
+            }
+          }
+          &:nth-child(3) {
+            width: 40%;
+            video,
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

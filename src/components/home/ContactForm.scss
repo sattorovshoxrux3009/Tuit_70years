@@ -1,0 +1,173 @@
+.home {
+  .contactForm {
+    margin-top: 50px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 1280px) {
+        flex-direction: column;
+      }
+      .left {
+        width: 48%;
+        @media screen and (max-width: 1280px) {
+          width: 100%;
+        }
+        h1 {
+          color: #00264b;
+          text-transform: uppercase;
+          font-size: 50px;
+          span {
+            color: #ff497a;
+          }
+          @media screen and (max-width: 1280px) {
+            text-align: center;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 28px;
+          }
+        }
+        p {
+          font-size: 20px;
+          color: #00264b;
+          margin-top: 20px;
+          @media screen and (max-width: 1280px) {
+            text-align: center;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+        h2 {
+          font-size: 40px;
+          color: #00264b;
+          @media screen and (max-width: 1280px) {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: normal;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 28px;
+          }
+        }
+        svg {
+          margin-left: 100px;
+          @media screen and (max-width: 1280px) {
+            display: none;
+          }
+        }
+      }
+      .right {
+        width: 48%;
+        @media screen and (max-width: 1280px) {
+          margin-top: 25px;
+          width: 100%;
+        }
+        form {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          ul {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            li {
+              cursor: pointer;
+              font-size: 18px;
+              width: 32%;
+              background-color: white;
+              border: none;
+              border-radius: 25px;
+              color: #00264b;
+              border: 1px solid #00264b;
+              padding: 10px 25px;
+              text-align: center;
+              @media screen and (max-width: 768px) {
+                font-size: 12px;
+                padding: 10px 0;
+              }
+            }
+            .active {
+              color: white;
+              background-color: #00264b;
+            }
+          }
+          button {
+            cursor: pointer;
+            background-color: #ff8800;
+            color: white;
+            padding: 10px 10px;
+            width: 32%;
+            border: 1px solid #ff8800;
+            border-radius: 25px;
+            font-size: 22px;
+            transition: 0.3s;
+            &:hover {
+              background-color: white;
+              color: #ff8800;
+            }
+            &:active {
+              transform: translateY(2px);
+            }
+            @media screen and (max-width: 768px) {
+              align-self: center;
+              width: 250px;
+              font-size: 16px;
+            }
+            @media screen and (max-width: 576px) {
+              width: 100%;
+            }
+          }
+          h4 {
+            position: absolute;
+            top: 135px;
+            font-weight: 900;
+            width: 100%;
+            text-align: center;
+            max-height: 0;
+            overflow: hidden;
+            font-size: 14px;
+            color: rgb(14, 200, 14);
+            transition: max-height 0.3s ease-out;
+          }
+          .active-success {
+            max-height: 100px;
+          }
+
+          p {
+            color: #00264b;
+            opacity: 0.8;
+            margin-top: 20px;
+          }
+          input {
+            margin-bottom: 20px;
+            background-color: #f7f6fb;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-bottom: 3px solid #00264b;
+            font-size: 24px;
+            outline: none;
+            &:focus {
+              outline: none;
+              border: none;
+              border-bottom: 3px solid #00264b;
+              @media screen and (max-width: 576px) {
+                border-bottom: 1px solid #00264b;
+              }
+            }
+            @media screen and (max-width: 768px) {
+              font-size: 18px;
+              min-width: 100%;
+            }
+            @media screen and (max-width: 576px) {
+              border-bottom: 1px solid #00264b;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

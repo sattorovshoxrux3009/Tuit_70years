@@ -1,0 +1,181 @@
+@font-face {
+  font-family: Helvetica;
+  src: url(../../fonts/helvetica.ttf);
+}
+.home {
+  .support {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        width: 73%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../img/aboutbg.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        border-radius: 30px;
+        background-color: #e7edff;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 100px;
+          li {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            @media screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 50px;
+            }
+            div {
+              @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+            }
+          }
+          h1 {
+            color: #00264b;
+            font-size: 110px;
+            font-weight: 700;
+            @media screen and (max-width: 768px) {
+              font-size: 90px;
+            }
+          }
+          p {
+            font-family: Helvetica;
+            opacity: 0.65;
+            font-weight: 100;
+            color: #00264b;
+            margin-top: -15px;
+            font-size: 18px;
+          }
+          h3 {
+            font-family: Helvetica;
+            line-height: 30px;
+            color: #00264b;
+            max-width: 400px;
+            font-weight: 400;
+            font-size: 22px;
+            @media screen and (max-width: 1024px) {
+              max-width: none;
+              text-align: center;
+            }
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+          @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            gap: 50px;
+          }
+        }
+        @media screen and (max-width: 1024px) {
+          height: auto;
+          padding: 40px;
+        }
+        @media screen and (max-width: 1370px) {
+          width: 100%;
+          padding: 40px;
+        }
+        @media screen and (max-width: 768px) {
+          background-image: url(../../img/aboutmobile.svg);
+          background-size: contain;
+        }
+      }
+      .right {
+        cursor: pointer;
+        padding: 40px 40px 20px 40px;
+        width: 25%;
+        background-color: white;
+        border-radius: 30px;
+        position: relative;
+        @media screen and (max-width: 1370px) {
+          width: 100%;
+        }
+        div {
+          height: 68px;
+          position: relative;
+          margin-top: 10px;
+          .img1 {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            z-index: 1;
+          }
+          .img2 {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            z-index: 2;
+            left: 45px;
+          }
+          .img3 {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            z-index: 3;
+            left: 85px;
+          }
+          .img4 {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            z-index: 4;
+            left: 130px;
+          }
+        }
+        h1 {
+          color: #00264b;
+          font-size: 22px;
+          font-weight: normal;
+        }
+        p {
+          font-family: Helvetica;
+          font-size: 18px;
+          line-height: 30px;
+          opacity: 0.65;
+          max-width: 250px;
+          margin-top: 20px;
+          color: #00264b;
+          @media screen and (max-width: 1370px) {
+            max-width: none;
+          }
+        }
+        svg {
+          position: absolute;
+          bottom: 40px;
+          right: 40px;
+          transition: 0.2s;
+        }
+        &:hover {
+          svg {
+            transform: rotate(-90deg);
+          }
+        }
+        @media screen and (max-width: 1370px) {
+          width: 100%;
+          padding: 40px;
+        }
+      }
+      @media screen and (max-width: 1370px) {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+  }
+}
