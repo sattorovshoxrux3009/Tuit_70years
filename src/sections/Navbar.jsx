@@ -90,14 +90,6 @@ function Navbar() {
               >
                 {t("schoolLife")}
               </a>
-              <a
-                href="#admission"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                {t("admission")}
-              </a>
 
               <a
                 href="#contact"
@@ -116,6 +108,14 @@ function Navbar() {
                 }
               >
                 {t("videos")}
+              </a>
+              <a
+                href="#"
+                onClick={() => {
+                  navigate("/subjects");
+                }}
+              >
+                {t("admission")}
               </a>
             </div>
             <div className="right">
@@ -229,15 +229,7 @@ function Navbar() {
             >
               {t("schoolLife")}
             </a>
-            <a
-              href="#admission"
-              onClick={() => {
-                navigate("/");
-                setActive(false);
-              }}
-            >
-              {t("admission")}
-            </a>
+
             <a
               href="#contact"
               onClick={() => {
@@ -255,6 +247,15 @@ function Navbar() {
               }}
             >
               {t("videos")}
+            </a>
+            <a
+              href="#"
+              onClick={() => {
+                navigate("/subjects");
+                setActive(false);
+              }}
+            >
+              {t("admission")}
             </a>
           </div>
           <div className="bottom">

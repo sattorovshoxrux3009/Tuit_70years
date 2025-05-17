@@ -1,0 +1,295 @@
+.Manual {
+  .main {
+    margin-top: 25px;
+    width: 100%;
+    height: 78.34vh;
+    background-image: url("../../img/1.gif"); /* GIF faylga yo'l */
+    background-repeat: repeat; /* Rasmni qayta takrorlamaydi */
+    background-size: cover; /* To'liq ekranni qoplaydi */
+    background-position: center; /* Markazlashtiriladi */
+    position: relative;
+    .close {
+      position: absolute;
+      transition: 0.3s;
+      top: 20px;
+      left: 20px;
+      box-shadow: 3px 4px 0px 0px #27316f;
+      background: linear-gradient(to bottom, #232a58 5%, #3846a6 100%);
+      background-color: #596ffc;
+      border-radius: 15px;
+      border: 1px solid #2d3673;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 24px;
+      padding: 7px 25px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #2f3b87;
+      width: 150px;
+      height: 40px;
+      transition: 0.3s;
+      display: none;
+
+      &:hover {
+        transform: translateX(2px) translateY(2px);
+      }
+    }
+    @media screen and (max-width: 475px) {
+      background: rgb(2, 0, 36);
+      background: -moz-radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(76, 56, 123, 1) 23%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      background: -webkit-radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(76, 56, 123, 1) 23%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      background: radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(76, 56, 123, 1) 23%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    }
+    .container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  .wrapper {
+    position: relative;
+
+    // background-color: white;
+    // background-image: url("../../img/1.gif"); /* GIF faylga yo'l */
+    // background-repeat: repeat; /* Rasmni qayta takrorlamaydi */
+    // background-size: cover; /* To'liq ekranni qoplaydi */
+    // background-position: center; /* Markazlashtiriladi */
+    width: 800px;
+    height: 460px;
+    border-radius: 30px;
+    // box-shadow: 8px 10px 16px 4px rgba(170, 170, 170, 0.75);
+    // -webkit-box-shadow: 8px 10px 16px 4px rgba(170, 170, 170, 0.75);
+    // -moz-box-shadow: 8px 10px 16px 4px rgba(170, 170, 170, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(197, 255, 240);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(197, 255, 240, 1) 20%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(197, 255, 240, 1) 20%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(197, 255, 240, 1) 20%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c5fff0",endColorstr="#ffffff",GradientType=1);
+  }
+
+  .title {
+    text-align: center;
+    margin: 0 20px;
+  }
+  .button {
+    box-shadow: 3px 4px 0px 0px #27316f;
+    background: linear-gradient(to bottom, #232a58 5%, #3846a6 100%);
+    background-color: #596ffc;
+    border-radius: 15px;
+    border: 1px solid #2d3673;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 24px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f3b87;
+    width: 150px;
+    height: 40px;
+    transition: 0.3s;
+  }
+  .list {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .item {
+    box-shadow: 10px 5px 9px -2px rgba(86, 63, 255, 0.5);
+    -webkit-box-shadow: 10px 5px 9px -2px rgba(86, 63, 255, 0.5);
+    -moz-box-shadow: 10px 5px 9px -2px rgba(86, 63, 255, 0.5);
+    border: 1px solid black;
+    font-size: 16px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: 0.3s;
+    user-select: none;
+    cursor: pointer;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .item:hover {
+    background-color: #7d93ff6e;
+  }
+  .button:hover {
+    background: linear-gradient(to bottom, #4d5899 5%, #3f59ff 100%);
+    background-color: #5cbf2a;
+  }
+  .button:active {
+    position: relative;
+    top: 1px;
+  }
+  .correct,
+  .correct:active,
+  .correct:hover {
+    background-color: #5cbf2a;
+    color: white;
+  }
+  .uncorrect,
+  .uncorrect:hover,
+  .uncorrect:active {
+    background-color: red;
+    color: white;
+  }
+
+  .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    background-color: rgba(36, 36, 36, 0.9);
+    h1 {
+      text-align: center;
+    }
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .modal .container {
+    width: 600px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 30px;
+  }
+
+  /* Media query for responsive website */
+  @media screen and (max-width: 1000px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media screen and (max-width: 870px) {
+    .container {
+      width: 500px;
+    }
+    .wrapper {
+      width: 700px;
+      height: 600px;
+    }
+    .item {
+      width: 400px;
+    }
+    .modal .container {
+      width: 400px;
+    }
+    .modal-title {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .container {
+      width: 100%;
+    }
+    .wrapper {
+      width: 90%;
+      height: 450px;
+    }
+    .title {
+      font-size: 24px;
+    }
+    .list {
+      width: 100%;
+      min-height: 230px;
+      display: flex;
+      align-items: center;
+    }
+    .item {
+      width: 90%;
+      min-height: 46px;
+    }
+    .modal .container {
+      width: 350px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .container {
+      width: 100%;
+    }
+    .wrapper {
+      width: 100%;
+      height: 450px;
+      border-radius: 18px;
+      border: 1px solid red;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .item {
+      width: 95%;
+
+      min-height: 35px;
+      font-size: 14px;
+    }
+    .text {
+      font-size: 16px;
+    }
+    .button {
+      font-size: 20px;
+      height: 35px;
+      padding: 0px;
+    }
+    .modal .container {
+      width: 300px;
+      height: 150px;
+      border-radius: 18px;
+    }
+    .modal-title {
+      font-size: 24px;
+    }
+  }
+}

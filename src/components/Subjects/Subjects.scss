@@ -1,0 +1,177 @@
+.Manual {
+  .subjects {
+    margin-top: 25px;
+    padding: 80px 0;
+    // background-color: #E4E4E4;
+    background-image: url("../../img/1.gif"); /* GIF faylga yo'l */
+    background-repeat: repeat; /* Rasmni qayta takrorlamaydi */
+    background-size: cover; /* To'liq ekranni qoplaydi */
+    background-position: center; /* Markazlashtiriladi */
+    // height: 100vh;
+    @media screen and (max-width: 475px) {
+      background: rgb(2, 0, 36);
+      background: -moz-radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(76, 56, 123, 1) 23%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      background: -webkit-radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(76, 56, 123, 1) 23%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      background: radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(76, 56, 123, 1) 23%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      // height: 80%;
+      width: 100%;
+      h1 {
+        color: white;
+        letter-spacing: 1.2px;
+        padding: 20px 0;
+        text-align: center;
+        @media screen and (max-width: 475px) {
+          font-size: 16px;
+        }
+      }
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        gap: 25px;
+        flex-wrap: wrap;
+        img {
+          width: 50%;
+          height: 200px;
+          @media screen and (max-width: 475px) {
+            width: 100%;
+            flex-direction: column;
+            height: auto;
+          }
+        }
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+      li {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        height: 250px;
+        border-radius: 25px;
+        padding: 10px;
+        transition: 0.3s;
+        overflow: hidden;
+        @media screen and (max-width: 1183px) {
+          width: 48%;
+          padding: 5px;
+        }
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 475px) {
+          width: 95%;
+          flex-direction: column;
+          height: auto;
+          padding: 25px;
+        }
+        span {
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          width: 50%;
+          height: 100%;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          @media screen and (max-width: 475px) {
+            width: 100%;
+            flex-direction: column;
+            height: auto;
+          }
+          div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            h5 {
+              color: #27316f;
+              font-size: 16px;
+              @media screen and (max-width: 1183px) {
+                font-size: 14px;
+              }
+            }
+          }
+          select {
+            font-size: 12px;
+            padding: 3px 5px;
+            width: 50px;
+          }
+          h3 {
+            color: #27316f;
+            font-size: 24px;
+            text-align: center;
+            @media screen and (max-width: 1183px) {
+              font-size: 18px;
+            }
+          }
+          button {
+            box-shadow: 3px 4px 0px 0px #27316f;
+            background: linear-gradient(to bottom, #232a58 5%, #3846a6 100%);
+            background-color: #596ffc;
+            border-radius: 15px;
+            border: 1px solid #2d3673;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 24px;
+            padding: 7px 25px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #2f3b87;
+            width: 150px;
+            height: 40px;
+            transition: 0.3s;
+            &:hover {
+              transform: scale(1.04);
+              background: linear-gradient(to bottom, #4d5899 5%, #3f59ff 100%);
+              background-color: #5cbf2a;
+            }
+            &:active {
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @keyframes animation1 {
+    0% {
+      transform: scale(1); /* Dastlabki holat */
+      opacity: 1; /* Dastlabki o'zgarmaslik */
+    }
+    100% {
+      transform: scale(1.05); /* 1.5 marta kattalashish */
+      opacity: 1; /* Yoki xohlagan o'zgarish */
+    }
+  }
+}
