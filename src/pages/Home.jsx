@@ -12,11 +12,11 @@ function Home() {
     <div className="home">
       <Main />
       <Support />
-      <Content />
-      <Methods />
+      {/* <Content /> */}
+      {/* <Methods /> */}
       <Agenda />
       <Events />
-      <Choice />
+      {/* <Choice /> */}
       <ContactForm />
     </div>
   );

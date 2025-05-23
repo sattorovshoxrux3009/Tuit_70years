@@ -56,14 +56,14 @@ function Navbar() {
             </a>
 
             <div className="links">
-              <a
+              {/* <a
                 href="#aboutUs"
                 onClick={() => {
                   navigate("/");
                 }}
               >
                 {t("aboutUs")}
-              </a>
+              </a> */}
               <a
                 onClick={() => {
                   navigate("/our_team");
@@ -82,14 +82,14 @@ function Navbar() {
               >
                 {t("agenda")}
               </a>
-              <a
+              {/* <a
                 href="#schoolLife"
                 onClick={() => {
                   navigate("/");
                 }}
               >
                 {t("schoolLife")}
-              </a>
+              </a> */}
 
               <a
                 href="#contact"
@@ -109,14 +109,14 @@ function Navbar() {
               >
                 {t("videos")}
               </a>
-              <a
+              {/* <a
                 href="#"
                 onClick={() => {
                   navigate("/subjects");
                 }}
               >
                 {t("admission")}
-              </a>
+              </a> */}
             </div>
             <div className="right">
               <a href="tel:+998712034444">+998-71-203-44-44</a>
@@ -193,7 +193,7 @@ function Navbar() {
             <span></span>
           </div>
           <div className="links">
-            <a
+            {/* <a
               href="#aboutUs"
               onClick={() => {
                 navigate("/");
@@ -201,7 +201,7 @@ function Navbar() {
               }}
             >
               {t("aboutUs")}
-            </a>
+            </a> */}
             <a
               onClick={() => {
                 navigate("/our_team");
@@ -220,7 +220,7 @@ function Navbar() {
             >
               {t("agenda")}
             </a>
-            <a
+            {/* <a
               href="#schoolLife"
               onClick={() => {
                 navigate("/");
@@ -228,7 +228,7 @@ function Navbar() {
               }}
             >
               {t("schoolLife")}
-            </a>
+            </a> */}
 
             <a
               href="#contact"
@@ -248,7 +248,7 @@ function Navbar() {
             >
               {t("videos")}
             </a>
-            <a
+            {/* <a
               href="#"
               onClick={() => {
                 navigate("/subjects");
@@ -256,7 +256,7 @@ function Navbar() {
               }}
             >
               {t("admission")}
-            </a>
+            </a> */}
           </div>
           <div className="bottom">
             <a href="tel:+998712034444">+998-71-203-44-44</a>
